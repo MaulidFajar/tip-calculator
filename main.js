@@ -4,8 +4,8 @@ const billInput = document.querySelector(".bill_input");
 const customTip = document.querySelector(".tip-custom");
 const tipInput = document.querySelector(".tip_input");
 const custInput = document.querySelector(".cust_input");
-const tipPrice = document.querySelector(".tip_price");
-const totalPrice = document.querySelector(".total_price");
+const tipPrice = document.getElementById("tip_price");
+const totalPrice = document.getElementById("total_price");
 const resetButton = document.querySelector(".reset_btn");
 const errorMessage = document.querySelector(".error_msg");
 
@@ -34,7 +34,7 @@ function handleBillInput() {
 }
 
 function handleCustInput() {
-  if (custInput.value < 0) {
+  if (custInput.value <= 0) {
     custInput.classList.add("error");
     errorMessage.style.display = "block";
   } else {
@@ -54,8 +54,8 @@ function calculatePrice() {
   let updateTip = (billValue / numCustomer) * tipValue;
   let updateTotal = billValue / numCustomer + updateTip;
 
-  tipPrice.textContent = updateTip.toFixed(2);
-  totalPrice.textContent = updateTotal.toFixed(2);
+  tipPrice.textContent = `$${updateTip.toFixed(2)}`;
+  totalPrice.textContent = `$${updateTotal.toFixed(2)}`;
 }
 
 function resetBtn() {

@@ -21,23 +21,25 @@
       <div class="container">
         <span class="title">Spli<br/>tter</span>
         <div class="tip_content_form">
-          <div class="bill_input_wrapper">
-            <label for="bill">Bill</label>
-            <input id="bill" type="number" class="input bill_input" placeholder="0.0">
-          </div>
-          <label>Select Tip %</label>
-          <div class="tip_selection_wrapper">
-            <button class="btn tip_option" type="button" value="5">5%</button>
-            <button class="btn tip_option" type="button" value="10">10%</button>
-            <button class="btn tip_option" type="button" value="15">15%</button>
-            <button class="btn tip_option" type="button" value="25">25%</button>
-            <button class="btn tip_option" type="button" value="50">50%</button>
-            <input type="number" class="input tip_input" placeholder="Custom">
-          </div>
-          <div class="cust_input_wrapper">
-            <label for="customer">Number of People</label>
-            <label class="error_msg">Can't be zero</label>
-            <input id="customer" type="number" class="input cust_input" placeholder="0">
+          <div class="form_wrapper">
+            <div class="bill_input_wrapper">
+              <label>Bill</label>
+              <input type="number" class="input bill_input" placeholder="0.0">
+            </div>
+            <label>Select Tip %</label>
+            <div class="tip_selection_wrapper">
+              <button class="btn tip_option" type="button" value="5">5%</button>
+              <button class="btn tip_option" type="button" value="10">10%</button>
+              <button class="btn tip_option" type="button" value="15">15%</button>
+              <button class="btn tip_option" type="button" value="25">25%</button>
+              <button class="btn tip_option" type="button" value="50">50%</button>
+              <input type="number" class="input tip_input" placeholder="Custom">
+            </div>
+            <div class="cust_input_wrapper">
+              <label>Number of People</label>
+              <label class="error_msg">Can't be zero</label>
+              <input type="number" class="input cust_input" placeholder="0">
+            </div>
           </div>
           <div class="price_section">
             <div class="tip_amount">
@@ -45,14 +47,14 @@
                 <p class="tip_text">Tip Amount</p>
                 <p class="tip_sub_text">/ Person</p>
               </div>
-              <span class="tip_amount_price tip_price"></span>
+              <span class="tip_amount_price" id="tip_price"></span>
             </div>
             <div class="total_amount">
               <div class="total_amount_text">
                 <p class="total_text">Total</p>
                 <p class="total_sub_text">/ Person</p>
               </div>
-              <span class="total_amount_price total_price"></span>
+              <span class="total_amount_price" id="total_price"></span>
             </div>
             <button class="btn reset_btn" type="reset">RESET</button>
           </div>
