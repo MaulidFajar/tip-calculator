@@ -37,7 +37,7 @@ body {
   text-transform: uppercase;
   color: var(--dark_grayish_cyan);
   text-align: center;
-  margin-bottom: 60px;
+  margin: 60px 0;
 }
 
 .tip_content_form {
@@ -209,13 +209,13 @@ input[type="number"] {
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
   }
 
   .tip_content_form {
     display: flex;
     gap: 0 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   }
 
   .container {

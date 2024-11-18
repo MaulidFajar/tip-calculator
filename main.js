@@ -72,5 +72,5 @@ function resetBtn() {
 billInput.value = "";
 customerInput.value = "";
 tipInput.value = "";
-tipPrice.textContent = "0.00";
-totalPrice.textContent = "0.00";
+tipPrice.textContent = "$0.00";
+totalPrice.textContent = "$0.00";
