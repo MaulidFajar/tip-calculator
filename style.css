@@ -210,6 +210,11 @@ input[type="number"] {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    margin: 0 0 60px 0;
   }
 
   .tip_content_form {
